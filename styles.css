@@ -1,0 +1,51 @@
+body, html{
+    margin: 0;
+    padding:0%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, black, white);
+    height: 100vh;
+
+}
+.keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.key {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+    background-color: #faf5f5;
+    cursor: pointer;
+    transition: all 0.07s ease;
+    
+}
+.playing{
+    transform: scale(1.1); 
+    border-color: black;
+    box-shadow: 0 0 10px blue;
+}
+kbd {
+    display: block;
+    font-size: 2rem;
+}
+.key:not(:disabled):hover,
+.key:not(:disabled):focus {
+  outline: 0;
+  background: #8a897d;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.key:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
