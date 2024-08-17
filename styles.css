@@ -3,12 +3,20 @@ body, html{
     padding:0%;
     height: 100%;
     display: flex;
+    flex-direction: column; /* Change flex direction to column */
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, black, white);
+    background: radial-gradient(circle, rgb(106, 118, 111), rgb(40, 39, 39));
     height: 100vh;
 
 }
+.title{
+    color: #faf5f5;
+    display: flex;
+    justify-content: center;
+    align-content: center;    
+}
+
 .keys {
     display: flex;
     justify-content: center;
@@ -16,14 +24,14 @@ body, html{
     
 }
 .key {
-    border: 2px solid black;
+    border: 3px solid rgb(39, 38, 38);
     border-radius: 5px;
     margin: 10px;
     font-size: 20px;
     padding: 20px;
     text-align: center;
     width: 100px;
-    background-color: #faf5f5;
+    background-color: #e7eae9;
     cursor: pointer;
     transition: all 0.07s ease;
     
@@ -49,3 +57,4 @@ kbd {
   -webkit-filter: saturate(0.2) opacity(0.5);
   cursor: not-allowed;
 }
+
